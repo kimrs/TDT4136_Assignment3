@@ -25,7 +25,7 @@ public class Test
 	
 	private static void testAlgorithm(State state)
 	{
-		PuzzleSolver solver = new AStarPuzzleSolver();
+		PuzzleSolver solver = new NonRecursiveAStarPuzzleSolver();
 		State winner = solver.solve(state);
 	}
 	

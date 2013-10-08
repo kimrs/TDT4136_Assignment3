@@ -135,7 +135,6 @@ public class State
 			{
 				if(s.generatedFrom != null && s.generatedFrom.toString().equals(move.toString()))
 					return s;
-				//System.out.println("gen: " + s.generatedFrom + " mov: " + move.toString());
 			}
 		} else //create an arraylist for the children about to be popped
 		{
@@ -157,7 +156,7 @@ public class State
 		next.generatedFrom = move;
 		children.add(next);
 		
-		return new State(nsVehicles, this);
+		return next;
 	}
 	
 	
