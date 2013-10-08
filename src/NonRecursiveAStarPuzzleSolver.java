@@ -47,6 +47,7 @@ public class NonRecursiveAStarPuzzleSolver implements PuzzleSolver
 					state = HelpfullAlorithms.stateWithLowestHValue(children);
 				}
 			}
+			
 			HelpfullAlorithms.printInfo(state, "level: " + level);
 		}
 		

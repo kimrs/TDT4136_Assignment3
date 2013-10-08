@@ -32,6 +32,14 @@ public abstract class HelpfullAlorithms
 		return occupiedSpaces;
 	}
 	
+	public static String printPath(State state)
+	{
+		printInfo(state);
+		if(state.parent != null)
+			return state.generatedFrom + "\n" + printPath(state.parent);
+		return "";
+	}
+	
 	public static void printInfo(State state, String info)
 	{
 		System.out.print(info + " ");
